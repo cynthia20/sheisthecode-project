@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE arebooking [
+
+<!ELEMENT arelist (arebeing, areple, arecode)>
+<!ELEMENT arebeing (#PCDATA)>
+<!ELEMENT areple (#PCDATA)>
+<!ELEMENT arecode (#PCDATA)>
+
+<!ELEMENT arenew (arebreack, areband)>
+<!ELEMENT arebreack (EMPTY)>
+<!ELEMENT areband (#PCDATA)>
+
+<!ELEMENT areend (arelost)>
+<!ELEMENT arelost (EMPTY)>
+
+<!ATTLIST arebreack rea   CDATA     #FIXED    "first">
+<!ATTLIST arelost ear CDATA #REQUIRED>
+]>
+
+<arebooking>
+
+	<arelist>
+		<arebeing>Cynthia Aremou</arebeing>
+		<areple>Etudiante; stagiaire à sheisthecode; en formation de programation</areple>
+		<arecode>Fait le 20/11/2017 à 16h00.</arecode>
+	</arelist>
+
+	<arenew>
+		<arebreack rea="first">Le travail contribue au développement de la personnalité et donne un sens à la vie. 
+			La personne mobilises tout son être pour tendre vers la perfection de sa tâche ;</arebreack>
+		<areband> elle pense y être arrive mais ses collègues et ses supérieurs ne le reconnaissent pas : 
+			c’est le début du stress et de la souffrance au travail. Les efforts fournis n’ont pas eu leur récompense. 
+			Résultat : dévalorisation de l’individu qui peut aller jusqu’à sa destruction.</areband>
+	</arenew>
+
+	<areend>
+		<arelost ear="3">Gérer et lutter contre le stress, c’est prendre conscience du décalage entre nos représentations 
+			et la réalité. Et agir pour cela de façon individuelle ne veut pas dire agir seul.Prendre conscience de 
+			son état de stress et faire tous pour le gérer est très important, et vous permettra de réfléchir plus
+            objectivement.</arelost>
+	</areend>
+
+</arebooking>
+
+<!--la balise "arebooking" permet l'affichage de tout ce qui s'y trouve-->
+<!--la balise "arelist" permet de structurer l'en-tête du document-->
+<!--la balise "arebeing" permet de donner le nom de celui qui conçoit le document-->
+<!--la balise "areple" permet de donner les informations nécessaire pour l'identification de celui qui conçoit le 
+document-->
+<!--la balise "arecode" permet de donner la date et l'heure à la quelle le document a été conçut-->
+<!--la balise "arenew" permet d'écrire un texte centrer-->
+<!--arebreack" est un élément d'ajout de contenues mais qui est affecté d'un attribut fixe "rea" qui ordonne 
+automatiquement au naviguateur de supprimer le premier mot de la première phrase-->
+<!--"areband" ordonne au naviguateur d'afficher le texte qui y est contenu sur une bande-->
+<!--la balise "areend" permet de fragmenter le text pour avoir un contenue en forme de conclusion-->
+<!-- la dernière balise "arelost" nous donne la possibilité de supprimer une ligne à un texte et le choix 
+de cette ligne se fait grâce à l'attribut "ear" qui est affecté à cet élément (ligne 1,2,3,...)-->
